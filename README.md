@@ -1,62 +1,156 @@
-# Astro Starter Kit: Blog
+# ThoughtLite
+
+<div align="center">
+    <p>
+        <img alt="ThoughtLite Light Mode Preview" src=".github/assets/preview-light.webp">
+        <img alt="ThoughtLite Dark Mode Preview" src=".github/assets/preview-dark.webp">
+    </p>
+    <p>
+        <a href="https://github.com/tuyuritio/astro-theme-thought-lite/releases/latest"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/tuyuritio/astro-theme-thought-lite"></a>
+        <a href="https://raw.githubusercontent.com/tuyuritio/astro-theme-thought-lite/refs/heads/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/tuyuritio/astro-theme-thought-lite"></a>
+        <a href="https://deepwiki.com/tuyuritio/astro-theme-thought-lite"><img alt="Ask DeepWiki" src="https://deepwiki.com/badge.svg"></a>
+    </p>
+    <p>A modern <a href="https://astro.build/">Astro</a> theme, focused on content creation 🌟</p>
+    <p>
+        <small><ins>English</ins></small>
+        <small><a href="README.zh-cn.md">简体中文</a></small>
+        <small><a href="README.ja.md">日本語</a></small>
+    </p>
+</div>
+
+> [!NOTE]
+> - `main` branch✅: Static build, can be deployed on any static hosting platform.
+> - `cloudflare` branch: Enables built-in comment system, only deployable on Cloudflare.
+
+🎬 **Live Demo**: [Vercel](https://thought-lite.vercel.app/)
+
+## ✨ Features
+
+- [x] **Responsive Design** - Adaptive for mobile, tablet, and desktop.
+- [x] **Light / Dark Mode** - Auto-follows system preference with manual toggle support.
+- [x] **CSR Dynamic Content Filtering** - List filtering and pagination via History API.
+- [x] **i18n Support** - Extensible multilingual support, also works perfectly in monolingual mode.
+- [x] **Sitemap & Feed Subscription** - Automated generation of Sitemap and Atom Feed.
+- [x] **OpenGraph Support** - Built-in Open Graph meta tags for optimized social media sharing.
+
+## ⚡️ Quick Start
+
+### Using Astro Command
+
+Run the following command:
 
 ```sh
-npm create astro@latest -- --template blog
+pnpm create astro --template tuyuritio/astro-theme-thought-lite
+
+# Follow the interactive prompts to create the project
+
+cd <your-project-name>
+pnpm dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Using Template
 
-Features:
+1. [Use this template](https://github.com/new?template_name=astro-theme-thought-lite&template_owner=tuyuritio) to create a new repository or [fork](https://github.com/tuyuritio/astro-theme-thought-lite/fork) this repository.
+2. Run the following commands:
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+```sh
+git clone <your-repo-url>
+cd <your-repo-name>
+pnpm install
+pnpm dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🔧 Configuration
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Customize site configuration and internationalization (i18n) by modifying the following files:
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+- `.env`
+- `astro.config.ts`
+- `site.config.ts`
 
-Any static assets, like images, can be placed in the `public/` directory.
+For basic configuration, refer to the [Site Configuration Guide](src/content/note/en/configuration.md).
 
-## 🧞 Commands
+For i18n configuration, refer to the [Internationalization Configuration Guide](src/content/note/en/internationalization.md).
 
-All commands are run from the root of the project, from a terminal:
+## 💻 Commands
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+The theme provides the following commonly used commands:
 
-## 👀 Want to learn more?
+| Command | Action |
+| --- | --- |
+| `pnpm install` | Install project dependencies |
+| `pnpm update` | Update project dependencies |
+| `pnpm new` | Create a new content file |
+| `pnpm dev` | Start the local development server (default: `http://localhost:4321`) |
+| `pnpm check` | Run Astro type checking |
+| `pnpm build` | Build the production version |
+| `pnpm preview` | Preview the built site |
+| `pnpm format` | Format code |
+| `pnpm lint` | Lint code |
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🚀 Deployment
 
-## Credit
+The current branch can be fully static built and deployed on any static hosting platform.
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+For deployment methods on various platforms, refer to the [Astro Official Deployment Guide](https://docs.astro.build/en/guides/deploy/).
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/tuyuritio/astro-theme-thought-lite&project-name=astro-blog-thought-lite&repository-name=astro-blog-thought-lite&teamSlug=tuyuritios-projects)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/integration/start/deploy?repository=https://github.com/tuyuritio/astro-theme-thought-lite)
+
+## 🔄 Updates
+
+Run the following commands to sync upstream updates:
+
+```sh
+git remote add theme https://github.com/tuyuritio/astro-theme-thought-lite.git
+git fetch theme
+git merge theme/main    # Add `--allow-unrelated-histories` flag for first update
+pnpm install
+```
+
+## ✍️ Content Creation
+
+Content creation is centralized in the `src/content` directory, mainly including:
+
+- `note` - Focused on carefully crafted and detailed long-form works
+- `jotting` - Lightweight and immediate content recording
+- `preface` - Displayed on the homepage as the first impression
+- `information` - Containing various descriptive content
+
+For details, refer to the [Content Creation Guide](src/content/note/en/content.md).
+
+## 🤝 Contributing
+
+All kinds of contributions are welcome and appreciated!
+
+- Help promote the project or assist other users
+- Report [issues](https://github.com/tuyuritio/astro-theme-thought-lite/issues) or suggest new features
+- Improve documentation or help with internationalization (i18n)
+- Submit code contributions
+- See [Contribution Guide](CONTRIBUTING.md) for more information
+
+## 🙏 Acknowledgments
+
+### Tech Stack
+
+- **Core Framework** - [Astro](https://astro.build/)
+- **Core Language** - [TypeScript](https://www.typescriptlang.org/)
+- **UI Components** - [Svelte](https://svelte.dev/)
+- **CSS Engine** - [Tailwind CSS](https://tailwindcss.com/)
+- **Icons** - [Iconify](https://iconify.design/)
+- **Fonts** - [Google Fonts](https://fonts.google.com/) | [ZeoSeven Fonts](https://fonts.zeoseven.com/)
+- **Image Viewer** - [Medium Zoom](https://github.com/francoischalifour/medium-zoom)
+- **SPA Transitions** - [Swup](https://swup.js.org/)
+- **Code Quality** - [Biome](https://biomejs.dev/)
+- **Static Deployment** - [Vercel](https://vercel.com/)
+
+### Inspiration
+
+- [Astro Sphere](https://github.com/markhorn-dev/astro-sphere)
+- [astro-vitesse](https://github.com/adrian-ub/astro-vitesse)
+- [Miniblog](https://github.com/nicholasdly/miniblog)
+- [AstroPaper with I18n](https://github.com/yousef8/astro-paper-i18n)
+
+## 📜 License
+
+This project is licensed under [GPLv3](LICENSE), allowing free modification and distribution, but the original copyright notice must be retained.
