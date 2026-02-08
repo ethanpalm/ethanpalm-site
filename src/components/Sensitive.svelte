@@ -1,11 +1,8 @@
 <script lang="ts">
 import type { Snippet } from "svelte";
 import { fade } from "svelte/transition";
-import i18nit from "$i18n";
 
 let { locale, sensitive = false, back, children }: { locale: string; sensitive: boolean; back: string; children: Snippet } = $props();
-
-const t = i18nit(locale);
 
 if (sensitive) {
 	$effect(() => {

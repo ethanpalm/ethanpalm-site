@@ -1,16 +1,11 @@
 ---
-import { getRelativeLocaleUrl } from "astro:i18n";
 import Icon from "$components/Icon.svelte";
 import { monolocale } from "$config";
-import i18nit from "$i18n";
 import Navigator from "./Navigator.svelte";
 import ThemeSwitcher from "./ThemeSwitcher.astro";
-import LanguagePicker from "./LanguagePicker.svelte";
 import Menu from "./Menu.astro";
 
 const { locale, title } = Astro.props;
-
-const t = i18nit(locale);
 
 /** Define navigation routes configuration */
 const routes: { path: string; extra?: string[]; icon: `${string}--${string}`; label: string }[] = [

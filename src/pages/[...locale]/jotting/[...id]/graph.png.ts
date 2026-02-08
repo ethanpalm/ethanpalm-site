@@ -2,7 +2,6 @@ import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
 import config, { monolocale } from "$config";
 import graph from "$graph/content";
-import i18nit from "$i18n";
 
 export async function getStaticPaths() {
 	const jottings = await getCollection("jotting", jotting => !jotting.data.draft);

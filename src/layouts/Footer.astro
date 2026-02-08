@@ -1,13 +1,9 @@
 ---
 import { getCollection, getEntry, render } from "astro:content";
-import { getRelativeLocaleUrl } from "astro:i18n";
 import { monolocale } from "$config";
 import Icon from "$components/Icon.svelte";
-import i18nit from "$i18n";
 
 let { locale, author, copyright } = Astro.props;
-
-const t = i18nit(locale);
 
 let ccURL: string;
 let ccLabel: string;

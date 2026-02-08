@@ -5,10 +5,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { cancel, confirm, intro, isCancel, log, multiselect, note, outro, select, spinner, text } from "@clack/prompts";
 import { Temporal } from "temporal-polyfill";
-import i18nit from "$i18n";
 import config, { monolocale } from "../site.config";
-
-const t = i18nit(config.i18n.defaultLocale, "script");
 
 const CANCEL_MESSAGE = t("new.cancel");
 
