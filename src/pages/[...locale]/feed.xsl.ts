@@ -1,5 +1,7 @@
 import type { APIRoute } from "astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
 import config from "$config";
+import i18nit from "$i18n";
 
 export async function getStaticPaths() {
 	// Create path for each locale, omitting default locale from URL

@@ -4,6 +4,7 @@ import { flip } from "svelte/animate";
 import config from "$config";
 import Icon from "$components/Icon.svelte";
 import Pagination from "$components/Pagination.svelte";
+import i18nit from "$i18n";
 
 let { locale, jottings, tags: tagList }: { locale: string; jottings: any[]; tags: string[] } = $props();
 

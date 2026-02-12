@@ -1,8 +1,10 @@
 import type { APIRoute } from "astro";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import { getCollection, render } from "astro:content";
+import { getRelativeLocaleUrl } from "astro:i18n";
 import { Feed } from "feed";
 import config, { monolocale } from "$config";
+import i18nit from "$i18n";
 
 export async function getStaticPaths() {
 	// Create path for each locale, omitting default locale from URL
@@ -15,6 +17,7 @@ export async function getStaticPaths() {
  */
 export const GET: APIRoute = async ({ site, params }) => {
 	const { locale: language = config.i18n.defaultLocale } = params;
+	const t = i18nit(language);
 
 	// Initialize feed with site metadata and configuration
 	const feed = new Feed({
