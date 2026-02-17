@@ -7,7 +7,7 @@ import type {
 export const SITE: SiteConfiguration = {
   title: "Ethan Palm",
   description:
-    "Personal website of Ethan Palm, technical writer and content person",
+    "Personal website of Ethan Palm, writer.",
   href: "https://ethanpalm.com",
   author: "Ethan Palm",
   locale: "en",
@@ -28,5 +28,13 @@ export const SOCIAL_LINKS: SocialLinks = {
   github: {
     label: "GitHub",
     href: "https://github.com/ethanpalm",
+  },
+  linkedin: {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/ethanpalm/",
+  },
+  email: {
+    label: "Email",
+    href: "mailto:info@ethanpalm.com",
   },
 };
