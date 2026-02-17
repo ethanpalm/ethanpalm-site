@@ -9,4 +9,6 @@ Professionally, I work as a technical writer and content strategist. I currently
 
 Personally, I write short fiction, long fiction, and essays. Beyond writing, I love games and puzzles; time with my family and friends; and experiences in nature that remind me I'm small but it's okay.
 
+I strongly prefer email to social media. Please feel free to write me and I'll write back.
+
 This is another cool [Ethan Palm](https://ethanpalm.net/).
