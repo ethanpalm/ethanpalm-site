@@ -18,9 +18,9 @@ export const NAV_LINKS: NavigationLinks = {
     path: "/blog",
     label: "Blog",
   },
-  projects: {
-    path: "/projects",
-    label: "Projects",
+  talks: {
+    path: "/talks",
+    label: "Talks",
   },
   about: {
     path: "/about",
