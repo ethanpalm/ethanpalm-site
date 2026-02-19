@@ -53,3 +53,29 @@
   --prose-link-color: var(--color-dark-link);
   --prose-link-underline-color: var(--color-dark-link);
 }
+
+.shimmer-tree {
+  position: absolute;
+  top: 0;
+  right: -24rem;
+  white-space: pre;
+  line-height: 1;
+  font-size: 0.5rem;
+  color: var(--color-neutral-500);
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.dark .shimmer-tree {
+  color: var(--color-neutral-700);
+}
+
+.shimmer-tree span {
+  opacity: 0.4;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
