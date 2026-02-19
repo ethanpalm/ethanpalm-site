@@ -80,13 +80,13 @@ const Content = about.Content;
     if (!tree) return;
     const text = tree.textContent || '';
     tree.textContent = '';
-    let i = 0;
     for (const char of text) {
       const span = document.createElement('span');
       span.textContent = char;
       if (char !== '\n' && char !== '⠀') {
-        span.style.animationDelay = `${i * 8}ms`;
-        i++;
+        const duration = 2 + Math.random() * 4;
+        const delay = Math.random() * 6;
+        span.style.animation = `twinkle ${duration}s ${delay}s ease-in-out infinite`;
       }
       tree.appendChild(span);
     }
