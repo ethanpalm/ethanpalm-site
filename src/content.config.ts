@@ -14,18 +14,4 @@ const blog = defineCollection({
     }),
 });
 
-const talks = defineCollection({
-  loader: glob({
-    pattern: "**/[^_]*.{md,mdx}",
-    base: "./src/content/talks",
-  }),
-  schema: () =>
-    z.object({
-      title: z.string(),
-      description: z.string(),
-      publicationDate: z.date().optional(),
-      href: z.string(),
-    }),
-});
-
-export const collections = { blog, talks };
+export const collections = { blog };
