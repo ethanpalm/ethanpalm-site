@@ -2,7 +2,7 @@
 title: Automated documentation
 description: Built and own the prompt engineering and custom workflows behind Mintlify's automated documentation system.
 link: https://mintlify.com/docs/automations
-order: 2
+order: 1
 tags:
   - AI
   - automation
